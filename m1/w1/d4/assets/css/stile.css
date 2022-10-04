@@ -1,0 +1,288 @@
+/* IMPOSTAZIONI GENERALI */
+
+@font-face {
+    font-family: fa;
+    src: url('../webfonts/fa-brands-400.woff2') format('woff2');
+    url ('../webfonts/fa-brands-400.woff') format('woff');
+    url ('../webfonts/fa-brands-400.ttf') format('ttf');
+    }
+
+body {
+  
+  background-image: url(../img/sfondo.png);
+  margin: 10px
+      }
+
+      hr {
+
+    display: none;
+      }
+
+/* HEADER */
+
+header {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    box-shadow: 0px 2px 3px 1px grey;
+    font-family: Poppins, sans-serif ;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(to bottom, #0099bb, #046c88)
+    
+    }   
+
+    img {
+        padding: 16px
+    }
+
+    header a:link, a:visited {
+        color: white;
+    }
+
+    header li::after {
+        content: ' \21D0';
+    }
+
+    header li::before {
+        content: ' \21D2';
+    }
+
+
+    header a {
+        text-decoration: none;
+        padding-left: 3px;
+        line-height: 1.2;
+    }
+
+    header ul {
+        list-style-type: none;
+        padding: 15px
+    }
+
+/* MAIN */
+
+    main h1 {
+        font-family: 'Poppins' , sans-serif;
+        font-size: 2rem;
+        font-weight: 550;
+        padding: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        line-height: 1.2;
+    }
+
+    main {
+        background-color: white;
+        box-shadow: 1px 1px 3px 1px grey;
+    }
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+article {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+       line-height: 1.5;
+}
+
+ iframe {
+    border-radius: 30px;
+    margin-bottom: 30px;
+    width: 100% ;
+    height: 225px;
+ }
+
+ h1+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: grey;
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+ }
+
+ article p {
+    padding:15px
+    
+ }
+
+ article h2 {
+    padding-left: 10px;
+ }
+
+ strong {
+    color:#9c4672;
+    font-weight: bold;
+    }
+
+ul {
+    padding-left: 30px;
+    margin-right: 10px;
+    padding-bottom: 15px
+}
+
+ol {
+    padding-left: 30px;
+    margin-right: 10px;
+}
+
+ li {
+    margin-left:40px ;
+       
+ }
+
+ code {
+    background-color:#e4e4e5 ;
+    border-radius: 5px;
+    border: 1px solid grey;
+ }
+
+ article a {
+
+    font-weight: bold;
+ }
+
+
+/* TABELLE */
+
+table {
+    border-bottom: #3369c5 1px solid;
+    width: 100%;
+    
+
+}
+
+caption {
+    font-style: italic;
+    font-weight: 550;
+    
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    background-color: #3369c5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color:#efefef ;
+}
+
+/* FORM */
+
+section {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #e4e4e5;
+    
+}
+
+section p {
+    text-align: left;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 15;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+fieldset {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    }
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    background-color:#346bc0 ;
+    color: white;
+    border: none;
+}
+
+input[type=email]{
+    
+    border-bottom: 2px dotted gray;
+    
+}
+
+
+/* ELEMENTI NELL' ASIDE */
+
+aside h2 {
+
+    margin-top: 20px;
+font-family: 'Poppins', sans-serif;
+font-size: 1.5em;
+font-weight: 500;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+aside div {
+    background-color:#e2e1dd ;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5;
+    border: 1px solid #d3d3d4;
+    padding-top: 20px;
+   
+}
+aside a {
+    padding-left: 10px;
+  color: #2fadc9;
+    font-weight: 550;
+  
+  
+}
+
+aside a:hover, a:visited{
+    color:#2fadc9 ;
+}
+aside p
+{
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+aside p:last-child {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(0,85,102);
+    background: linear-gradient(205deg, rgba(0,85,102,1) 47%, rgba(27,63,73,0.9091969551492471) 100%); 
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+    padding: 20px;
+}
+
+footer address {
+    padding: 10px;
+}
+
+
+
+   

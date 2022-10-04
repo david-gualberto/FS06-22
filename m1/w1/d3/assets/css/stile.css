@@ -1,0 +1,173 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    }
+
+/* HEADER */
+
+header+hr {
+
+display: none;
+}
+
+header {
+    border-bottom-width: 6px;
+    border-bottom-style: solid;
+    border-bottom-color: #027794;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #00a0c6;
+    
+    
+        }
+header h1 {
+    
+     text-transform: uppercase;
+     font-weight: 200px bold;
+     color: white;
+        }
+
+span {
+    background-color: white;
+    color: #00a0c6
+}
+
+header h2 {
+    font-variant: small-caps;
+        }
+
+div h2 {
+    line-height: 1.5;
+    text-align: center;
+    color: #027794;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+h3 {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+a {
+    color: #d2715e;
+}
+
+Address+p {
+    padding: 10px;
+}
+
+hr {
+    border:none;
+    border-top:1px dotted rgb(0, 0, 0);
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width:100%;
+  }
+
+main h2 {
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center;
+    color: #027794;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+main {
+    padding: 10px
+}
+
+mark {
+    color: white;
+    background-color: #027794;
+    
+}
+
+strong {
+    color:#00a0c6;
+}
+
+/* ELEMENTI NEL MAIN */
+
+div {
+    line-height: 1.5;
+}
+
+figure {
+   
+    text-align:center;
+}
+
+figcaption {
+        padding: 10px
+}
+
+figure img {
+    padding: 10px;
+    border-width: 1px;  
+    border-style: solid; 
+    border-color: grey; 
+    
+}
+
+blockquote {
+    text-align: center;
+    background-color: #e3e3e3;
+    border: 20px;
+    border-radius: 5px
+}
+
+blockquote p {
+    text-align: center;
+    padding: 10px;
+}
+
+li {
+
+    margin-left: 30px;
+}
+
+
+dd {
+    margin-left:20px ;
+}
+
+/* FOOTER */
+
+footer+hr {
+    padding-bottom: 20px;
+}
+
+footer hr {
+    display:none;
+
+}
+
+footer {
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    background-color: #353535;
+    border-top-width: 6px;
+    border-top-style: solid;
+    border-top-color: #027794;
+}
+
+kbd {
+color: yellow;
+font-style: italic;
+font-weight: bold;
+}
+
+small {
+    color: grey;
+}
+

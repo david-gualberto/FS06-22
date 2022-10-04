@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Primi passi operativi per creare un modello di pagina HTML per un post. Scoprire come iniziare in modo facile">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./assets/img/logo.svg" alt="logo">
+        </div>
+        <div>
+            <h1>Epicode - Il blog dei developers</h1>
+        </div>
+    </header>
+<hr>
+    <nav>
+        <!-- Menu -->
+        <div id="menu" name="menu" style="text-align:center ;">
+            <ul style="list-style-type: none;">
+                <li style="display:inline;"><a href="#">Home</a> </li>
+                <li style="display:inline;"><a href="#">Articoli</a> </li>
+                <li style="display:inline;"><a href="#">Job</a> </li>
+            </ul>
+        </div>  
+    </nav>
+    <main>      
+    <!-- Titolo -->
+    <hr>
+    <br>
+    <div style="line-height: 1.5px;">
+        <h2>Come creare un template per i post</h2>
+        <p>di <strong>Mario Rossi</strong> - <i>pubblicato il 25-10-2020</i></p>
+    </div>
+    <br>
+    <!-- Articolo -->
+    
+            <article style="text-align:justify ;">
+            <div>
+                <p> La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare
+                    e tutte le pagine
+                    le varie aree saranno quindi suddivise in:</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Contenuti di intestazione del tag &ltheader&gt</li>
+                    <li>Contentui centrali variabili del tag &ltmain&gt (corpo principale)</li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag &ltfooter&gt</li>
+                    <li>Formattazione del codice</li>
+                </ul>
+            </div>
+            <div>
+                <p>Il testo dell'articolo dovrà essere formattato per indentificare tutte le parti da selezionare con i <abbr
+                        title="Cascading Style Sheets"> CSS</abbr>. Perciò i passi saranno:</p>
+            </div>
+            <div>
+                <ol>
+                    <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                    <li>Scrivere l' <abbr title="HyperText Markup Language"> HTML</abbr> dei tag a esterni a quelli interni e
+                        dall'alto verso il basso</li>
+                    <li>Applicare gli stili <abbr title="Cascading Style Sheets">CSS</abbr></li>
+                </ol>
+            </div> 
+         
+            <div>         
+            <p>L'applicazione di stili <abbr title="Cascading Style Sheets">CSS</abbr> è cresciuta negli anni fino a raggiungere la diffuzione pressochè totale.</p>
+            </div> 
+     <!-- Tabella -->
+            <div>
+            <table>
+                <caption aria-colspan="3">Diffusione dei CSS</caption>
+                    <thead>
+                        <tr>
+                            <th>Anno</th><th>&percnt; di utilizzo</th><th>Supporto browsers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2000</td><td>20&percnt;;</td><td>17&percnt;</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td><td>35&percnt;</td><td>22&percnt;</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td><td>45&percnt;</td><td>42&percnt;</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td><td>80&percnt;</td><td>51&percnt;</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td><td>100&percnt;</td><td>76&percnt;</td>
+                        </tr>
+                    </tbody>
+
+            </table>
+            
+            </div>
+            <p style="text-align:justify ;">Un test di validazione potrà essere fatto tramite il <a href="https://validator.w3.org/" target="_blank" style="color: blue;"> tool</a> online dedicato allo scopo. 
+                Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+            
+        </article>
+     <!-- Video -->
+        <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jqz-OyVQBJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </main>
+    <br>
+    <aside>
+     <!-- Newsletter -->
+     <section>
+        <div style="line-height: 1px;">
+            <p>Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla nostra newsletter</p>
+            <form method="post" action="prova.php" autocomplete="on">
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua mail">
+                <button type="submit" name="invia" id="invia" >INVIA</button>
+            </form>
+        </div>
+    </section>
+<hr>
+    <!-- Articoli Correlati -->
+        <div>
+            <h3>Articoli Correlati</h3>
+        </div>
+        <div id="correlati" name="correlati">
+            <ul style="list-style-type: none; padding-left: 0px;">
+                <li style="display:inline;"><a href="#">Validare il codice HTML</a> </li>
+                <li>Categoria: develop </li>
+                <li>Data: 18-9-2020</li>
+            </ul>
+        </div> 
+        <div id="correlati" name="correlati">
+            <ul style="list-style-type: none; padding-left: 0px;">
+                <li style="display:inline;"><a href="#">Correggere la sintassi</a> </li>
+                <li>Categoria: develop </li>
+                <li>Data: 16-9-2020</li>
+            </ul>
+        </div> 
+        <div id="correlati" name="correlati">
+            <ul style="list-style-type: none; padding-left: 0px;">
+                <li style="display:inline;"><a href="#">Meno Kb nella pagina</a> </li>
+                <li>Categoria: ottimizzazione </li>
+                <li>Data: 30-9-2020</li>
+            </ul>
+        </div> 
+    </aside>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div style="line-height: 1px; font-size: small;">
+        <p>Blog Epicode 2021</p>
+        <p>Testata online di <strong>Mario Rossi</strong>, registrata con prot. n.213/3018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233
+        <a href="mailto:info@epicode.scool" style="color: blue; text-decoration:none ;"> info@epicode.scool</a></p> 
+        </div>
+    </footer>
+    
+</body>
+</html>
