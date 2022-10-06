@@ -1,0 +1,68 @@
+
+body {
+
+font-family: 'indie flower';
+}
+
+h4 {
+    font-size:2em;
+    font-weight: bold;
+    padding-top: 1.5em;
+
+}
+
+
+#container {
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1.4;
+    height: 65vh;
+    padding-top: 20px;
+}
+
+#container h4 {
+    text-align: center;
+}
+
+#container p {
+    text-align: left;
+    padding-left: 60px;
+}
+
+#container div {
+   width: 20vw; 
+   height: 150px;
+   margin: 10px;
+   box-shadow: 1px 1px 10px rgb(58, 58, 58);
+}
+
+
+
+.postit1, .postit5, .postit7 {
+    background-image: linear-gradient( rgb(241, 241, 187) 80%, rgba(190, 190, 149, 0.81));
+    transform: rotate(-6deg);
+}
+
+.postit3, .postit6 {
+    background-image: linear-gradient( rgb(213, 196, 248) 80%, rgba(141, 127, 170, 0.825));
+    transform: rotate(-6deg);
+}
+
+.postit2, .postit4, .postit8 {
+    background-image: linear-gradient(rgb(162, 215, 162) 80% , rgba(159, 192, 159, 0.743));  
+} 
+
+.postit2, .postit8 {
+    transform: rotate(6deg);
+}
+
+.postit4 {
+    transform: rotate(10deg);
+}
+
+#container div:hover{
+    transform: scale(1.3);
+    }
