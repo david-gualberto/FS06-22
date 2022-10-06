@@ -26,7 +26,7 @@ margin-top: 10px;
 position: relative;
 }
 
-i{  color: transparent;
+.parole i{  color: transparent;
     animation: alternato 6s infinite;
     position: absolute;
     margin-left: 5px;
