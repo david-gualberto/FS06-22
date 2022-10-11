@@ -37,8 +37,7 @@ document.getElementById('iniziale').innerHTML = 'Valore iniziale: ' + iniziale;
 // Addizzione e incremento
 {  
     let valore1= iniziale+iniziale;
-    let incremento= valore1+1;
-    document.getElementById('valore1').innerHTML = `Addizione e incremento: ${valore1}, ${incremento}`;
+    document.getElementById('valore1').innerHTML = `Addizione e incremento: ${valore1}, ${++valore1}`;
 }
 // Sottrazione e decremento
 {   
