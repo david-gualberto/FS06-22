@@ -36,25 +36,25 @@ document.getElementById('iniziale').innerHTML = 'Valore iniziale: ' + iniziale;
 
 // Addizzione e incremento
 {  
-    valore1= iniziale+iniziale;
-    incremento= valore1+1;
+    let valore1= iniziale+iniziale;
+    let incremento= valore1+1;
     document.getElementById('valore1').innerHTML = `Addizione e incremento: ${valore1}, ${incremento}`;
 }
 // Sottrazione e decremento
 {   
-    valore2 = iniziale - 10;
-    decremento = valore2 - 1;
+    let valore2 = iniziale - 10;
+    let decremento = valore2 - 1;
     document.getElementById('valore2').innerHTML = `Sottrazione e Decremento: ${valore2}, ${decremento}`
 }
 
 // Moltiplicazione 
 {
-    valore3 = iniziale*3;
+    let valore3 = iniziale*3;
     document.getElementById('valore3').innerHTML = `Moltiplicazione: `+valore3;
 }
 // Divisione
 {
-    valore4=iniziale/3;
+    let valore4=iniziale/3;
     document.getElementById('valore4').innerHTML = `Divisione: `+valore4;
 }
 // Concatenazione
