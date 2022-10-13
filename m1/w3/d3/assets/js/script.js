@@ -1,4 +1,4 @@
-// Arance e mele
+// Arance e mele  
 
 function succo(mele, arance) {
   return `Succo con ${mele} mele e ${arance} arance`;
@@ -39,10 +39,15 @@ document.getElementById("torta").innerHTML = torta(15);
 var btn = document.getElementById('calcola');
 
 btn.addEventListener('click', function() {
+    let totale = " ";
     let cibo = Number(document.getElementById('cibo').value); 
     let detersivi = Number(document.getElementById('detersivi').value); 
     let abiti = Number(document.getElementById('abiti').value);
     let totale = cibo + detersivi + abiti;
     document.getElementById('totale').innerHTML += totale;
+
+    document.getElementById('cibo').value= '';
+    document.getElementById('detersivi').value= '';
+    document.getElementById('abiti').value='';
 })
 
