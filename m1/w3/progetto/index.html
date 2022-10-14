@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Calcolatrice" description="La mia calcolatrice con JS">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Calcolatrice</title>
+</head>
+
+<body>
+    <h1>La mia calcolatrice JS</h1>
+    <label for="checkbox" class="label">CLICCA QUI!</label>
+    <input id="checkbox" type="checkbox">
+    <div id="calcolatrice">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"><input type="text" readonly="readonly" id="risultato"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button type="button" id="7" onclick="insertValue(this.id)" class="numero">7</button></td>
+                    <td><button type="button" id="8" onclick="insertValue(this.id)" class="numero">8</button></td>
+                    <td><button type="button" id="9" onclick="insertValue(this.id)" class="numero">9</button></td>
+                    <td><button type="button" id="&#8730" onclick="radice(this.id)" class="operazione">&#8730</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="4" onclick="insertValue(this.id)" class="numero">4</button></td>
+                    <td><button type="button" id="5" onclick="insertValue(this.id)" class="numero">5</button></td>
+                    <td><button type="button" id="6" onclick="insertValue(this.id)" class="numero">6</button></td>
+                    <td><button type="button" id="/" onclick="insertValue(this.id)" class="operazione">&#247</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="1" onclick="insertValue(this.id)" class="numero">1</button></td>
+                    <td><button type="button" id="2" onclick="insertValue(this.id)" class="numero">2</button></td>
+                    <td><button type="button" id="3" onclick="insertValue(this.id)" class="numero">3</button></td>
+                    <td><button type="button" id="*" onclick="insertValue(this.id)" class="operazione">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numero" type="button" id=" " onclick="azzera(this.id)">C</button></td>
+                    <td><button type="button" id="0" onclick="insertValue(this.id)" class="numero">0</button></td>
+                    <td><button type="button" id="." onclick="insertValue(this.id)" class="numero">.</button></td>
+                    <td><button type="button" id="-" onclick="insertValue(this.id)" class="operazione">-</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="operazione()" type="button" value="=" class="totale">=</button>
+                    </td>
+                    <td><button type="button" id="+" onclick="insertValue(this.id)" class="operazione addizione">+</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
