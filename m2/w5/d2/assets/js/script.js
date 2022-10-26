@@ -1,5 +1,5 @@
 
-   function scrivi() 
+ /*  function scrivi() 
    {
       let budget = 1000;
       let compere = 0;
@@ -15,30 +15,43 @@
           break;
         }
       }
-    }
+    }*/
    
     
-//let btn = document.getElementById('aggiungi');
+let btn = document.getElementById('aggiungi');
 
-//btn.addEventListener('click', function()  {
-    //scrivi() })
-/*   function scrivi() 
+btn.addEventListener('click', function()  {
+    scrivi(); })
+
+
+   function scrivi() 
    {
-    let budget = Number(document.getElementById('budget').value);
+    var budget = Number(document.getElementById('budget').value);
     if (budget<500) {
-      document.getElementById('scrivi').innerHTML = 'Scrivi un importo superiore a 500'
+      document.getElementById('lista').innerHTML = 'Scrivi un importo superiore a 500';
       return;
     }
-    sottrazione(budget) ;
+    sottrazione(budget);
    }
 
  function sottrazione(budget) { 
-      let spese = Math.floor(Math.random() * 100);
-      let budgetParz = budget - spese;
-      document.getElementById('scrivi').innerHTML = `<li>Spesa effettuata = ${spese} <br> Budget rimanente = ${budgetParz}</li>`;
 
-      while (budgetparz > 0) {
-        budgetParz = budgetParz - spese;
-        document.getElementById('scrivi').innerHTML = `<li>Spesa effettuata = ${spese} <br> Budget rimanente = ${budgetParz}</li>`;
+  var contaSpese = 0;
+  var budgetParz = budget;
+  var check = true;
+    while (budgetParz > (budget/10)) 
+    {
+     var spese = Math.floor(Math.random() * 100);
+    budgetParz -= spese;
+    document.getElementById('lista').innerHTML += `<li>Spesa effettuata = ${spese} <br> Budget rimanente = ${budgetParz}</li>`;
+    contaSpese++;
+
+      if (budgetParz < (budget/2) && check == true) {
+        check = false;
+        document.getElementById('lista').innerHTML += `metà`;
       }
- } */
+
+
+    }
+    document.getElementById('lista').innerHTML += `finito`;
+ }
