@@ -1,0 +1,81 @@
+
+#container {
+    display: block;
+}
+
+.mostra {
+    display:none;
+}
+#menu_drop {
+    background-color: aqua;
+    list-style: none;
+    position: absolute;
+    min-width: 120px;
+    padding-block: 10px;
+}
+
+#button_apri {
+    background-color: rgb(21, 21, 119);
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+#button_apri:hover {
+    background-color: cadetblue;
+}
+
+#menu_drop ul {
+    list-style: none;
+    margin-block: 0px;
+    padding-block: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+a, li {
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+a:hover {
+    background-color: beige;
+}
+
+#bottoni {
+    margin-top: 100px;
+}
+
+#bottoni button {
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.nascondi {
+    visibility: hidden;
+}
+
+.coloreh2 {
+    color: red;
+}
+
+.grandeh2 {
+    font-size: 60px;
+}
+
+.maiuscoloh2 {
+    text-transform: uppercase;
+}
+
+.sbarrato {
+    text-decoration: line-through;
+}
