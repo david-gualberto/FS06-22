@@ -133,6 +133,7 @@ function displayIcon() {
        vittoria();
     }
 }
+
 function suonoOK(){
     var sound = new Audio("assets/audio/indovinata.mp3");
     sound.play();
