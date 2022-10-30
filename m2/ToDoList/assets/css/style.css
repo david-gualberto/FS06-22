@@ -1,0 +1,23 @@
+input {
+    height: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+li>button {
+    background-color: transparent;
+    border: none;
+}
+
+.sbarrato {
+    text-decoration: line-through;
+    cursor: pointer;
+    opacity: 0.5;
+}
