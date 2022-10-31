@@ -7,7 +7,7 @@ ul {
 }
 
 li {
-    word-wrap: break-word;
+    line-break: anywhere;
     cursor: pointer;
 }
 
