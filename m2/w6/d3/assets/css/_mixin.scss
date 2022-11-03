@@ -1,0 +1,20 @@
+@mixin testi{
+    margin-inline: 80px;
+    margin-block: 20px;
+}
+
+@mixin titoli {
+    margin-block: 20px;
+}
+
+@mixin mobile() {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
