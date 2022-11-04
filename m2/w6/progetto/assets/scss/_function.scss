@@ -1,0 +1,9 @@
+
+@function luminosita($color) {
+    @if (lightness($color)>70) {
+        @return black;
+    }
+    @else {
+        @return white;
+    }
+}

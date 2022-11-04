@@ -1,0 +1,106 @@
+@import "mieVariabili";
+
+body {
+    h2 {
+        @include h2;
+    }
+    img {
+        width: 100px;
+    }
+}
+
+.bi-list {
+    font-size: 32px;
+    color: map-get($color, 'arancione');
+    &:hover {
+        color: lighten(map-get($color, "arancione"), $amount: 20%);
+    }
+}
+.navbar {
+    background: linear-gradient(to top, map-get($color, "nav-color"), map-get($color, "nav-color2"));
+}
+
+.navbar-toggler {
+    color: map-get($color, 'arancione');
+}
+
+.nav-link {
+    font-size: $font-size-p;
+    color: map-get($color, 'arancione');
+    &:hover {
+        color: lighten(map-get($color, "arancione"), $amount: 20%);
+    }
+}
+
+#titolo {
+    background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+    background-position-y: 35%;
+    height: 500px;
+
+    h1 {
+        font-weight: 300;
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: $font-size-p;
+    }
+    button {
+        background-color: map-get($color , 'nav-color');
+    }
+}
+
+#testo {
+    background-color: map-get($color , 'sfondo-lorem');
+    color: luminosita(map-get($color , 'sfondo-lorem'));
+    i {
+        font-size: 32px;
+    }
+    h2 {
+        margin-top: 10px;
+    }
+    p {
+        font-size: $font-size-p;
+    }
+}
+
+#partnership {
+
+    h2 {
+        margin-top: 10px;
+    }
+}
+
+#carosello {
+    p {
+        font-size: $font-size-p;
+        line-height: 1.8;
+    }
+}
+
+#carouselExampleSlidesOnly {
+    i {
+        font-size: 26px;
+        color: map-get($color, 'arancione');
+    }
+}
+
+.clienti {
+    font-size: $font-size-h4;
+    font-weight: 500;
+}
+
+footer {
+    background: linear-gradient(to top, map-get($color, "nav-color"), map-get($color, "nav-color2"));
+    color:luminosita(map-get($color, "nav-color2"));
+    p {
+        font-size: $font-size-p;
+    }
+    h4 {
+        font-size: $font-size-h4;
+        font-weight: 400;
+    }
+
+}
+.fondo_pagina {
+    font-size: 1rem;
+}
