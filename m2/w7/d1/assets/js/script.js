@@ -1,4 +1,5 @@
 btn = document.getElementById('button');
+const oggi = new Date();
 
 class Utente {
     constructor(_nome, _cognome, _dataNascita, _anni) {
@@ -6,7 +7,6 @@ class Utente {
         this.cognome = _cognome;
         this.dataNascita = _dataNascita;
         this.anni = function() {
-            const oggi = new Date();
             const annoUtente = new Date(this.dataNascita);
             var eta = (oggi.getFullYear() - annoUtente.getFullYear());
 
@@ -15,6 +15,7 @@ class Utente {
                 eta--;
             }
             return eta;
+
         };
     }
 }
@@ -46,7 +47,6 @@ function scrivi() {
             span.parentNode.remove();
         })
         svuotaCampi();
-        stampArray();
     }
 }
 
