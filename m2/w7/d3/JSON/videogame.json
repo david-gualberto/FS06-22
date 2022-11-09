@@ -1,0 +1,73 @@
+[
+    {
+        "id" : 1,
+        "titolo" : "Warzone",
+        "anno" : 2020,
+        "categoria": "Sparatutto in prima persona",
+        "editore" : "Activision"
+    },
+    {
+        "id" : 2,
+        "titolo" : "Final Fantasy VII",
+        "anno" : 1997,
+        "categoria": "RPG",
+        "editore" : "Square Enix"
+    },
+    {
+        "id" : 3,
+        "titolo" : "GTA III",
+        "anno" : 2001,
+        "categoria": "Sparatutto in terza persona",
+        "editore" : "Rockstar Games"
+    },
+    {
+        "id" : 4,
+        "titolo" : "Crash Bandicoot",
+        "anno" : 1996,
+        "categoria": "Avventura dinamica",
+        "editore" : "Naughty Dog"
+    },
+    {
+        "id" : 5,
+        "titolo" : "Pokemon Red",
+        "anno" : 1996,
+        "categoria": "RPG",
+        "editore" : "Nintendo"
+    },
+    {
+        "id" : 6,
+        "titolo" : "Metal Gear Solid",
+        "anno" : 1998,
+        "categoria": "Sparatutto strategico",
+        "editore" : "Konami"
+    },
+    {
+        "id" : 7,
+        "titolo" : "Fifa 98",
+        "anno" : 1997,
+        "categoria": "Simulazione sportiva",
+        "editore" : "Electronic Arts"
+    },
+    {
+        "id" : 8,
+        "titolo" : "Tom Clancy's The Division",
+        "anno" : 2013,
+        "categoria": "Action RPG",
+        "editore" : "Ubisoft"
+    },
+    {
+        "id" : 9,
+        "titolo" : "World of Warcraft",
+        "anno" :2004,
+        "categoria": "MMORPG",
+        "editore" : "Blizzard Entertainment"
+    },
+    {
+        "id" : 10,
+        "titolo" : "Championship Manager",
+        "anno" : 2004,
+        "categoria": "Manageriale sportivo",
+        "editore" : "Eidos Interactive"
+    }
+
+]
