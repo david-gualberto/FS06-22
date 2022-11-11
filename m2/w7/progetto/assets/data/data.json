@@ -1,0 +1,34 @@
+{
+  "elenco": [
+    {
+      "nome": "Gennaro",
+      "cognome": "Notaro",
+      "id": 1
+    },
+    {
+      "nome": "Diego Armando",
+      "cognome": "Maradona",
+      "id": 5
+    },
+    {
+      "nome": "David",
+      "cognome": "Gualberto",
+      "id": 8
+    },
+    {
+      "nome": "Francesco",
+      "cognome": "Totti",
+      "id": 9
+    },
+    {
+      "nome": "Paulo",
+      "cognome": "Dybala",
+      "id": 10
+    },
+    {
+      "nome": "Antonino",
+      "cognome": "Cannavaciuolo",
+      "id": 11
+    }
+  ]
+}
