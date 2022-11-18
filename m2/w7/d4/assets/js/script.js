@@ -17,7 +17,7 @@ function stampaJSON() {
                     div.innerHTML += `<img src=${film.locandina} class="card-img-top">`
                     div.appendChild(div2)
                     div2.classList.add("card-body");
-                    div2.innerHTML += `<p class="card-text">${film.titolo} ${film.anno} <br> ${film.attori["primoattore"]}</p>`;
+                    div2.innerHTML += `<p class="card-text">${film.titolo} ${film.anno} <br> ${film.cart["ogetto1"]}</p>`;
                 });
             } else {
                 lista.innerHTML = 'Nessun elemento presente';
