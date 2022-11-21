@@ -1,0 +1,1 @@
+esercizio con JSON e fetch method GET
