@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="bg-secondary">
+    <div class="wrapper">
+        <div class="iphone">
+            <div class="power"></div>
+            <div class="lock"></div>
+            <div class="volume up"></div>
+            <div class="volume down"></div>
+            <div class="camera"></div>
+            <div class="speaker"></div>
+            <div class="screen" id="schermo">
+                <div class="appleicon d-flex flex-column justify-content-between bg-secondary">
+                    <div class="w-100 mt-2">
+                        <label class="text-white" for="importo">Importo Ricarica</label>
+                        <input class="w-100 form-control" type="number" name="importo" id="importo"
+                         placeholder="Inserire l'importo da ricaricare">
+                        <p class="text-dark" id="creditoRicarica"></p>
+                    </div>
+                    <div class="w-100">
+                        <label class="text-white" for="minuti">Minuti della chiamata...</label>
+                        <input class="w-100 form-control" type="number" name="importo" id="minuti"
+                            placeholder="Inserire i minuti della chiamata...">
+                        <p class="text-white">Costo della chiamata: <b><span class="text-dark" id="costoChiamata"></span></b>
+                        </p>
+                    </div>
+                    <p class="text-white">Numero delle chiamate effettuate: <b><span id="numeroChiamate"></span></p></b>
+                    <h4 class="text-white">Credito residuo: <b><span class="text-dark" id="creditoResiduo"></span></b></h4>
+                    <div class="d-flex flex-column" id="bottoni">
+                        <button class="ricarica rounded-0 btn btn-warning" id="aggiungi">RICARICA</button>
+                        <button class="ricarica rounded-0 btn btn-success" id="chiama">CHIAMA</button>
+                        <button class="ricarica rounded-0 btn btn-danger" id="azzera">AZZERA CHIAMATE</button>
+                    </div>
+                </div>
+                <div class="text">
+                </div>
+            </div>
+            <div class="button" onclick="spegni()">
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/ts/progetto.js"></script>
+</body>
+
+</html>
