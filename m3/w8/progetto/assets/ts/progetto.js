@@ -9,7 +9,7 @@ var numchiamata = document.getElementById("numeroChiamate");
 btn.addEventListener("click", ricarica);
 btn2.addEventListener("click", chiama);
 btn3.addEventListener("click", azzera);
-//CLASSE UTENET
+//CLASSE UTENTE
 var Utente = /** @class */ (function () {
     function Utente(_credito, _numeroChiamate) {
         this.credito = _credito;
@@ -29,7 +29,7 @@ var Utente = /** @class */ (function () {
         return this.numeroChiamate;
     };
     Utente.prototype.azzeraChiamate = function () {
-        return (this.numeroChiamate - this.numeroChiamate);
+        this.numeroChiamate = 0;
     };
     return Utente;
 }());
@@ -46,7 +46,8 @@ utente1.chiamata(28);
 numchiamata.innerHTML = utente1.getNumeroChiamate();
 console.log("Saldo residuo:" + utente1.numero404().toFixed(2));
 console.log("Numero di chiamate:" + utente1.getNumeroChiamate());
-console.log("Azzeramento chiamate:" + utente1.azzeraChiamate());
+utente1.azzeraChiamate;
+console.log("Azzeramento chiamate:" + utente1.numeroChiamate);
 console.log("-----------------------------");
 console.log("Secondo Utente:");
 utente2.ricarica(5);
