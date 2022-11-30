@@ -1,0 +1,16 @@
+
+<div [ngClass]="{
+    'bg-warning': p.type == 'news',
+    'bg-info': p.type == 'education',
+    'bg-dark': p.type == 'politic',
+    'text-white': p.type == 'politic'
+  }" class="card m-2" *ngFor="let p of posts">
+    <h5 class="card-header">{{p.id}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{p.title}}</h5>
+      <p class="card-text">{{p.body}}</p>
+    </div>
+    <button class="btn btn-light" (click)="modificaStato(false, p.id)">Disattiva</button>
+  </div>
+
+
