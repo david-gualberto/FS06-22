@@ -1,0 +1,14 @@
+<div [ngClass]="{
+    'bg-warning': posts.type == 'news',
+    'bg-info': posts.type == 'education',
+    'bg-dark': posts.type == 'politic',
+    'text-white': posts.type == 'politic'
+  }" class="card m-2">
+    <h5 class="card-header">{{posts.id}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">{{posts.title}}</h5>
+        <p class="card-text">{{posts.body}}</p>
+    </div>
+    <ng-content></ng-content>
+</div>
+

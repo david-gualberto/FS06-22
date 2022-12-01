@@ -1,0 +1,9 @@
+
+<div *ngFor="let p of posts">
+    <app-post-card  [posts]="p">
+        <div>
+        <button class="btn btn-light m-2" (click)="modificaStato(true, p.id)" >Attiva</button>
+        <button class="btn btn-light m-2" (click)="eliminaPost(p.id)" >Elimina</button>
+    </div>
+    </app-post-card>
+  </div>
