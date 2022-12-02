@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "nome": "Francesci Totti",
+            "email": "totti@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 2,
+            "nome": "Paulo Dybala",
+            "email": "dybala@gmail.com",
+            "role": "user"
+        },
+        {
+            "id": 3,
+            "nome": "Daniele De Rossi",
+            "email": "derossi@gmail.com",
+            "role": "user"
+        },
+        {
+            "id": 4,
+            "nome": "Giuseppe Giannini",
+            "email": "principe@gmail.com",
+            "role": "user"
+        }
+    ]
+}

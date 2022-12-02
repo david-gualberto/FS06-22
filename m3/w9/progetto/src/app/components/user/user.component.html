@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center mt-3">
+<table class="table w-25 table-dark table-striped table-hover">
+    <thead>
+        <tr>
+          <th scope="col">Utenti</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td (click)="navigation(u.id)" routerLinkActive="active">{{u.nome}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<router-outlet>
+    <app-dettagli-card></app-dettagli-card>
+</router-outlet>
+

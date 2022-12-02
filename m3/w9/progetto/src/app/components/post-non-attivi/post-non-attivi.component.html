@@ -1,0 +1,9 @@
+
+<div *ngFor="let p of posts">
+    <app-post-card  [posts]="p">
+     <div>
+        <button class="btn btn-danger m-2" (click)="eliminaPost(p.id)">Elimina</button>
+        <button class="btn btn-success m-2" (click)="modificaStato(true, p.id)" >Attiva</button>
+        <button [routerLink]="['/dettagli']" routerLinkActive="active" class="btn btn-primary m-2">Dettagli</button></div>
+    </app-post-card>
+  </div>
