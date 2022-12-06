@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="text-center">Reactive Form</h1>
+</div>
+<div class="container">
+  <form [formGroup]="form"]>
+      <div formGroupName="heroInfo">
+          <label for="nome">Nome</label>
+          <input type="text" formControlName="nome" id="nome" class="form-control">
+          <label for="alterego">Alter Ego</label>
+          <input type="text" formControlName="alterego" id="alterego" class="form-control">
+      </div>
+      <div formArrayName="superpoteri" class="mb-3">
+          <h3>I miei Poteri</h3>
+          <button type="button" (click)="addPoteri()" class="btn btn-success m-1">Aggiungi potere</button>
+          <div class="form-group mb-2" *ngFor="let poteri of getPotere(); let i = index">
+              <input type="text" class="form-control" [formControlName]= "i">
+          </div>
+      </div>
+      <div>
+          <label for="nemico">Nemico</label>
+          <input type="text" formControlName="nemico" id="nemico" class="form-control">
+      </div>
+      <button type="submit" (click)="submit()" class="btn btn-primary mt-2">Invia</button>
+  </form>
+</div>
+
+
+
