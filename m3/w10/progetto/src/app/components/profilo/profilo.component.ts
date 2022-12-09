@@ -10,8 +10,8 @@ export class ProfiloComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let aaa:any = localStorage.getItem('user')
-    this.user = JSON.parse(aaa)
+    let utente:any = localStorage.getItem('user')
+    this.user = JSON.parse(utente)
     }
 
   }
