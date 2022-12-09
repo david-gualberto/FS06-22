@@ -38,10 +38,6 @@ export class AuthService {
     }))
   }
 
-  getUser(id:number) {
-    return this.http.get<User>(`http://localhost:3000/users/${id}`)
-  }
-
   logOut() {
     this.authSubj.next(null);
     localStorage.removeItem('user')
