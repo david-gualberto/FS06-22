@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { catchError, VirtualTimeScheduler } from 'rxjs';
 import { FilmFavorite, Movie } from 'src/app/interface/auth-response';
 import { MovieService } from 'src/app/service/movie-service.service';
 
@@ -8,17 +9,26 @@ import { MovieService } from 'src/app/service/movie-service.service';
   styleUrls: ['./movie.component.scss']
 })
 export class MovieComponent implements OnInit {
+  user:any = [];
   movies: Movie[] = [];
-  data: FilmFavorite[] = []
   constructor(private mvSrv:MovieService) { }
 
   ngOnInit(): void {
+    let utente:any = localStorage.getItem('user')
+    this.user = JSON.parse(utente)
     this.mvSrv.getFilm().subscribe((res)=>{
       this.movies = res
     })
   }
 
-  addFavorite(data:FilmFavorite) {
-    this.mvSrv.filmFavoriti(data)
-  }
+  addFavorite(id:number) {
+    let data: FilmFavorite = {
+      movieId: id,
+      userId: this.user.user.id,
+     }
+      this.mvSrv.add(data).pipe(catchError(err=> {
+      throw err
+  }))
+
+}
 }

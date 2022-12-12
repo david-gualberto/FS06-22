@@ -11,8 +11,6 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AuthService {
 
-  movie: Movie[] = [];
-
   jwtHelper = new JwtHelperService()
   private authSubj = new BehaviorSubject<null | AuthResponse>(null);
   user$ = this.authSubj.asObservable();

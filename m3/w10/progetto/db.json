@@ -23,6 +23,12 @@
       "password": "$2a$10$hZPqMcaKgeO1zHnAn/QSV.e.FxnAPdBrIPa5kNqDDLIpu5GIXr3xW",
       "nome": "Carolina",
       "id": 4
+    },
+    {
+      "email": "luigi@gmail.com",
+      "password": "$2a$10$zAe4PcFHerpvMrPaF/4RKeJ16iPbZi8c28JbR2EDBeb6wbshHcoRu",
+      "nome": "Luigi",
+      "id": 5
     }
   ],
   "favorites": [
@@ -30,26 +36,6 @@
       "movieId": 567189,
       "userId": 2,
       "id": 1
-    },
-    {
-      "movieId": 578701,
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "movieId": 567189,
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "movieId": 578701,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "email": "gualbertodavid@gmail.com",
-      "password": "",
-      "id": 5
     }
   ],
   "genres": [

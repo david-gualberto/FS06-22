@@ -25,8 +25,8 @@ export class MovieService {
     }));
   }
 
-  filmFavoriti(data:FilmFavorite) {
-    return this.http.post<FilmFavorite>("http://localhost:3000/favorites", data)
+  add(data:FilmFavorite) {
+    return this.http.post<FilmFavorite[]>("http://localhost:3000/favorites", data)
   }
 
 }

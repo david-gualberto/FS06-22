@@ -1,4 +1,8 @@
 i {
     font-size: 25px;
     color: grey;
+    cursor: pointer;
+    &:hover {
+        color: black
+    }
 }
