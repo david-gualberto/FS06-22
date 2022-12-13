@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Movie } from '../interface/auth-response';
 import { HttpClient } from '@angular/common/http';
-import { ReplaySubject, Subject, } from 'rxjs';
+import { ReplaySubject } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { FilmFavorite } from '../interface/auth-response';
 
@@ -29,7 +29,7 @@ export class MovieService {
     return this.http.post<FilmFavorite[]>("http://localhost:3000/favorites", data)
   }
 
-  dislike(id:Number) {
+  dislike(id:number) {
     return this.http.delete<FilmFavorite>(`http://localhost:3000/favorites/${id}`)
   }
 
