@@ -11,6 +11,7 @@ import { TokenInterceptor } from './service/token.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ProfiloComponent } from './components/profilo/profilo.component';
 import { MovieComponent } from './components/movie/movie.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MovieComponent } from './components/movie/movie.component';
     RegisterComponent,
     ProfiloComponent,
     MovieComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

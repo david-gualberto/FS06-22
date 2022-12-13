@@ -29,4 +29,12 @@ export class MovieService {
     return this.http.post<FilmFavorite[]>("http://localhost:3000/favorites", data)
   }
 
+  dislike(id:Number) {
+    return this.http.delete<FilmFavorite>(`http://localhost:3000/favorites/${id}`)
+  }
+
+  favoriteFilm(id:number) {
+    return this.http.get<FilmFavorite[]>(`http://localhost:3000/favorites?userId=${id}`)
+  }
+
 }

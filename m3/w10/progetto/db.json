@@ -33,9 +33,14 @@
   ],
   "favorites": [
     {
-      "movieId": 567189,
+      "movieId": 503736,
       "userId": 2,
       "id": 1
+    },
+    {
+      "movieId": 634528,
+      "userId": 2,
+      "id": 2
     }
   ],
   "genres": [

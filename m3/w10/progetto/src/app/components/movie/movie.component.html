@@ -1,11 +1,5 @@
 <div class="d-flex flex-wrap justify-content-between">
-  <div class="card m-3" style="width: 250px;" *ngFor="let m of movies">
-    <img src="http://image.tmdb.org/t/p/w500/{{m.poster_path}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title text-danger">{{m.title}}</h5>
-    </div>
-    <div class="text-center">
-    <i (click)="addFavorite(m.id)" class="btn bi bi-chat-left-heart-fill"></i>git
-    </div>
+  <div class="card m-3" style="width: 250px; height:498px ;" *ngFor="let m of movies">
+    <app-card [film]="m"></app-card>
   </div>
 </div>

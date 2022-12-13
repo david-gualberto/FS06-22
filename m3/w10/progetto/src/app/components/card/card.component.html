@@ -1,0 +1,9 @@
+
+<img src="http://image.tmdb.org/t/p/w500/{{film.poster_path}}" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title text-danger text-center fs-6">{{film.title}}</h5>
+  <div class="text-center">
+    <i [ngStyle]="{'color': favorite ? 'red' : ''}" (click)="addFavorite(film.id)">&#9829;</i>
+    </div>
+</div>
+
